@@ -14,9 +14,12 @@ class testCase(unittest.TestCase):
     def test_1(self):
         self.wd.get(href)
         self.wd.find_element_by_name("q").send_keys("Selenium was here")
-        self.wd.find_element_by_name("btnK").click()
-        WebDriverWait(self.wd, 10).until(EC.title_is("Selenium was here - Google Search"))
-
+        self.wd.find_element_by_name("btnI").click()
+        try:
+            WebDriverWait(self.wd, 10).until(EC.title_is("Selenium was here - Google Search"))
+        except:
+            print("Title mismatch")
+            self.wd.quit()
 
     def tearDownClass(self):
         self.wd.quit()
