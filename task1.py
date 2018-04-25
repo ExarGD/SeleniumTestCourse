@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-href = "http://192.168.64.2/litecart/admin/"
+href = "http://localhost/litecart/admin/"
 
 
 class testCase(unittest.TestCase):
