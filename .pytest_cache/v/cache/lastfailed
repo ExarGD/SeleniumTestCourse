@@ -1,3 +1,4 @@
 {
-  "main.py::testCase::test_1": true
+  "main.py::testCase::test_1": true,
+  "task3.py::testCase": true
 }
