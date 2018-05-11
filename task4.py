@@ -11,7 +11,7 @@ href = "http://localhost/litecart/en/"
 class testCase(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.wd = webdriver.Chrome()
+        self.wd = webdriver.Safari()
 
     def test_1(self):
         self.wd.get(href)
@@ -30,8 +30,12 @@ class testCase(unittest.TestCase):
         name = duck.find_element_by_css_selector('.name').get_attribute('innerText')
         regular_price = duck.find_element_by_css_selector('s.regular-price').get_attribute('innerText')
         discount_price = duck.find_element_by_css_selector('strong.campaign-price').get_attribute('innerText')
+        # self.assertEqual(
+        #     duck.find_element_by_css_selector('s.regular-price').value_of_css_property('text-decoration-line'),
+        #     'line-through', "Regular price is not strikethrough")
+        #---Safari---
         self.assertEqual(
-            duck.find_element_by_css_selector('s.regular-price').value_of_css_property('text-decoration-line'),
+            duck.find_element_by_css_selector('s.regular-price').value_of_css_property('text-decoration'),
             'line-through', "Regular price is not strikethrough")
 
         # ---Проверка цвета
@@ -50,9 +54,19 @@ class testCase(unittest.TestCase):
         print(color_disc)
 
         # ---Проверка жирности---
+        # self.assertEqual(
+        #     duck.find_element_by_css_selector('strong.campaign-price').value_of_css_property('font-weight'),
+        #     '700', "Discount price is not bold")
+
+        # ---Firefox---
+        # self.assertEqual(
+        #     duck.find_element_by_css_selector('strong.campaign-price').value_of_css_property('font-weight'),
+        #     '900', "Discount price is not bold")
+
+        #---Safari---
         self.assertEqual(
             duck.find_element_by_css_selector('strong.campaign-price').value_of_css_property('font-weight'),
-            '700', "Discount price is not bold")
+            'bold', "Discount price is not bold")
 
         # ---Проверка размера шрифта---
         self.assertTrue(

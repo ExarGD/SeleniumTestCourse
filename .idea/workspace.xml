@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e96890-1136-45df-8351-be5a55f02471" name="Default" comment="Задание 9">
-      <change afterPath="$PROJECT_DIR$/task4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task4.py" beforeDir="false" afterPath="$PROJECT_DIR$/task4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/lib/python3.6/site-packages/selenium/webdriver/safari/webdriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/python3.6/site-packages/selenium/webdriver/safari/webdriver.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,8 +58,32 @@
       <file leaf-file-name="task4.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="710">
-              <caret line="71" column="103" lean-forward="true" selection-start-line="71" selection-start-column="103" selection-end-line="71" selection-end-column="103" />
+            <state relative-caret-position="603">
+              <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webdriver.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/lib/python3.6/site-packages/selenium/webdriver/safari/webdriver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="537">
+              <caret line="48" column="71" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
+              <folding>
+                <element signature="e#886#964#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task5.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -104,11 +130,13 @@
         <option value="$PROJECT_DIR$/task1.py" />
         <option value="$PROJECT_DIR$/task2.py" />
         <option value="$PROJECT_DIR$/task3.py" />
+        <option value="$PROJECT_DIR$/task5.py" />
+        <option value="$PROJECT_DIR$/tests/lib/python3.6/site-packages/selenium/webdriver/safari/webdriver.py" />
         <option value="$PROJECT_DIR$/task4.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
@@ -123,6 +151,62 @@
             <path>
               <item name="TestSetup" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestSetup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestSetup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestSetup" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestSetup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestSetup" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestSetup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestSetup" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="python3.6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestSetup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestSetup" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="python3.6" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestSetup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestSetup" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="python3.6" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="selenium" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestSetup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestSetup" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="python3.6" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="selenium" type="462c0819:PsiDirectoryNode" />
+              <item name="webdriver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestSetup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestSetup" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="python3.6" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="selenium" type="462c0819:PsiDirectoryNode" />
+              <item name="webdriver" type="462c0819:PsiDirectoryNode" />
+              <item name="safari" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -322,10 +406,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49689442" visible="true" weight="0.100520834" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49689442" visible="true" weight="0.1921875" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.40302613" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50277996" side_tool="true" weight="0.33287483" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.21155556" />
@@ -812,10 +896,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/task5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/lib/python3.6/site-packages/selenium/webdriver/safari/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="48" column="71" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
+          <folding>
+            <element signature="e#886#964#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/task4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="71" column="103" lean-forward="true" selection-start-line="71" selection-start-column="103" selection-end-line="71" selection-end-column="103" />
+        <state relative-caret-position="603">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
