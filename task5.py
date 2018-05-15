@@ -6,9 +6,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.ui import Select
 from time import sleep
+import datetime
 
 href = "http://localhost/litecart/en/create_account"
-
+now = datetime.datetime.now().strftime("%d%m%Y%H%M")
 
 class testCase(unittest.TestCase):
     @classmethod
@@ -38,7 +39,7 @@ class testCase(unittest.TestCase):
         selectCountry.select_by_visible_text('United States')
         selectState = Select(self.wd.find_element_by_css_selector('select[name="zone_code"]'))
         selectState.select_by_visible_text('Iowa')
-        self.wd.find_element_by_css_selector('[name="email"]').send_keys('email@email.com')
+        self.wd.find_element_by_css_selector('[name="email"]').send_keys(now+'@email.com')
         self.wd.find_element_by_css_selector('[name="phone"]').send_keys('+19876543210')
         self.wd.find_element_by_css_selector('[name="password"]').send_keys('password')
         self.wd.find_element_by_css_selector('[name="confirmed_password"]').send_keys('password')
@@ -47,7 +48,7 @@ class testCase(unittest.TestCase):
 
     def test_3(self):
         self.wd.find_element_by_css_selector('#box-account [href="http\:\/\/localhost\/litecart\/en\/logout"]').click()
-        self.wd.find_element_by_css_selector('[name="email"]').send_keys('email@email.com')
+        self.wd.find_element_by_css_selector('[name="email"]').send_keys(now+'@email.com')
         self.wd.find_element_by_css_selector('[name="password"]').send_keys('password')
         self.wd.find_element_by_css_selector('[name="login"]').click()
 
