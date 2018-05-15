@@ -9,7 +9,7 @@ from time import sleep
 import datetime
 
 href = "http://localhost/litecart/en/create_account"
-now = datetime.datetime.now().strftime("%d%m%Y%H%M")
+now = datetime.datetime.now().strftime("%d%m%Y%H%M%S")
 
 class testCase(unittest.TestCase):
     @classmethod
