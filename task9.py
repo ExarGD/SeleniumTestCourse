@@ -39,7 +39,7 @@ class testCase(unittest.TestCase):
             self.wd.get(href)
         for l in self.wd.get_log("browser"):
             print(l)
-        self.assertTrue(len(self.wd.get_log("browser"))>0, "There are some SEVERE level errors!")
+        self.assertTrue(len(self.wd.get_log("browser"))==0, "There are some SEVERE level errors!")
 
 
     @classmethod
