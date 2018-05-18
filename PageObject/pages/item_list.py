@@ -2,39 +2,39 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.select import Select
 
 
-class RegistrationPage:
+class ItemList:
 
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(driver, 10)
 
     def open(self):
-        self.driver.get("http://localhost/litecart/en/create_account")
+        self.driver.get("http://localhost/litecart/en/")
         return self
 
     @property
-    def firstname_input(self):
-        return self.driver.find_element_by_name("firstname")
+    def select_new_item(self):
+        return self.driver.find_element_by_css_selector('#box-most-popular li:nth-of-type(1) .link')
 
     @property
-    def lastname_input(self):
-        return self.driver.find_element_by_name("lastname")
+    def select_dropdown(self):
+        return self.driver.find_elements_by_css_selector('[name="options[Size]"]')
 
     @property
-    def address1_input(self):
-        return self.driver.find_element_by_name("address1")
+    def items_quantity(self):
+        return self.driver.find_element_by_css_selector('span.quantity').get_attribute('innerText')
 
     @property
-    def postcode_input(self):
-        return self.driver.find_element_by_name("postcode")
+    def add_to_cart(self):
+        return self.driver.find_element_by_css_selector('[name="add_cart_product"]')
 
     @property
-    def city_input(self):
-        return self.driver.find_element_by_name("city")
+    def open_cart(self):
+        return self.driver.find_element_by_id("cart")
 
     @property
-    def email_input(self):
-        return self.driver.find_element_by_name("email")
+    def remove_button(self):
+        return self.driver.find_elements_by_css_selector('[name=remove_cart_item]')
 
     @property
     def phone_input(self):

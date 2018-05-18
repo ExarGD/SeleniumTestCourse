@@ -1,36 +1,39 @@
 from selenium import webdriver
-from pages.admin_page_logon import AdminPageLogOn
-from pages.customers_page import CustomersPage
-from pages.registration_page import RegistrationPage
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import Select
+
+from pages.custom_wait import TextToChange
+from pages.item_list import ItemList
 
 
 class Application:
 
     def __init__(self):
         self.driver = webdriver.Chrome()
-        self.registration_page = RegistrationPage(self.driver)
-        self.admin_panel_login_page = AdminPageLogOn(self.driver)
-        self.customer_list_page = CustomersPage(self.driver)
+        self.item_list = ItemList(self.driver)
 
     def quit(self):
         self.driver.quit()
 
-    def register_new_customer(self, customer):
-        self.registration_page.open()
-        self.registration_page.firstname_input.send_keys(customer.firstname)
-        self.registration_page.lastname_input.send_keys(customer.lastname)
-        self.registration_page.address1_input.send_keys(customer.address)
-        self.registration_page.postcode_input.send_keys(customer.postcode)
-        self.registration_page.city_input.send_keys(customer.city)
-        self.registration_page.select_country(customer.country)
-        self.registration_page.select_zone(customer.zone)
-        self.registration_page.email_input.send_keys(customer.email)
-        self.registration_page.phone_input.send_keys(customer.phone)
-        self.registration_page.password_input.send_keys(customer.password)
-        self.registration_page.confirmed_password_input.send_keys(customer.password)
-        self.registration_page.create_account_button.click()
+    def add_items_to_cart(self):
+        self.item_list.open()
+        for i in range(0, 3):
+            self.item_list.select_new_item.click()
+            if len(self.item_list.select_dropdown) > 0:
+                Select(self.driver.find_element_by_name("options[Size]")).select_by_visible_text("Small")
+            self.item_list.add_to_cart.click()
+            WebDriverWait(self.driver, 5).until(TextToChange((By.CSS_SELECTOR, "span.quantity"), str(i)))
+            self.item_list.open()
 
-    def get_customer_ids(self):
-        if self.admin_panel_login_page.open().check_right_page():
-            self.admin_panel_login_page.enter_username("admin").enter_password("admin").submit_login()
-        return self.customer_list_page.open().get_customer_ids()
+    def remove_items_from_cart(self):
+        self.item_list.open_cart.click()
+        for i in range(0, 5):
+            if len(self.item_list.remove_button) > 0:
+                self.driver.find_element_by_css_selector('[name=remove_cart_item]').click()
+        WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "em")))
+
+    def get_quantity(self):
+        self.item_list.open()
+        return self.item_list.items_quantity
