@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46e96890-1136-45df-8351-be5a55f02471" name="Default" comment="Задание 9">
-      <change afterPath="$PROJECT_DIR$/task9.py" afterDir="false" />
+    <list default="true" id="46e96890-1136-45df-8351-be5a55f02471" name="Default" comment="Задание 19">
+      <change afterPath="$PROJECT_DIR$/task10.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/task7.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+              <caret line="21" column="39" selection-end-line="69" selection-end-column="19" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -78,13 +77,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task9.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="task9.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task9.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="41" column="95" selection-start-line="41" selection-start-column="95" selection-end-line="41" selection-end-column="95" />
+            <state relative-caret-position="416">
+              <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
               <folding>
                 <element signature="e#71#86#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task10.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/task10.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/task1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="513">
-              <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+              <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -117,6 +128,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Адель &lt;exar@adel-macbook-pro.local&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -133,6 +149,7 @@
         <option value="$PROJECT_DIR$/task7.py" />
         <option value="$PROJECT_DIR$/task8.py" />
         <option value="$PROJECT_DIR$/task9.py" />
+        <option value="$PROJECT_DIR$/task10.py" />
       </list>
     </option>
   </component>
@@ -163,7 +180,8 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -352,17 +370,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49689442" visible="true" weight="0.17395833" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49689442" visible="true" weight="0.164297" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.40302613" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50277996" side_tool="true" weight="0.33287483" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.328877" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.21155556" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.3287483" />
-      <window_info active="true" anchor="bottom" auto_hide="true" x="0" y="281" width="1280" height="238" id="Run" order="6" sideWeight="0.49722" type="SLIDING" visible="true" weight="0.20383275" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.328" />
+      <window_info anchor="bottom" x="0" y="281" width="1280" height="238" id="Run" order="6" sideWeight="0.49722" weight="0.3191111" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.24973376" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.503231" weight="0.33244446" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.503231" visible="true" weight="0.33244446" />
       <window_info id="Favorites" order="0" sideWeight="0.5031056" side_tool="true" weight="0.106770836" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31794426" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -398,7 +415,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Задание 7" />
     <MESSAGE value="Задание 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание 9" />
+    <MESSAGE value="Задание 19" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание 19" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -406,13 +424,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/task1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="16" selection-start-line="16" selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -725,16 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task7.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task8.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="873">
@@ -772,16 +773,36 @@
     <entry file="file://$PROJECT_DIR$/task1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
-          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task9.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="41" column="95" selection-start-line="41" selection-start-column="95" selection-end-line="41" selection-end-column="95" />
+        <state relative-caret-position="416">
+          <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
           <folding>
             <element signature="e#71#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="39" selection-end-line="69" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
